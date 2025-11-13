@@ -1,61 +1,41 @@
-<div align="center">
-  <img src="https://github.com/incubated-geek-cc/Text-To-Speech-App/raw/main/img/logo.png" width="96" alt="logo">
+# VocalCanvas Studio
 
-  # 🔎 Text-To-Speech App
+VocalCanvas Studio transforms text, images, and multi-page PDFs into expressive speech entirely in the browser with no server dependencies.
 
-  ### 🛠️ Built with open-sourced Tesseract OCR Engine (WebAssembly JavaScript port). An offline in-browser setup.
+## Highlights
+- Image OCR: Drop in a photo or scan to extract editable text in seconds.
+- PDF Pipeline: Render each page, run OCR, and build a unified transcript automatically.
+- Voice Studio: Preview voices, adjust rate, and queue narration segments before export.
+- Local Workflow: Runs offline via WebAssembly OCR and built-in browser speech synthesis.
 
-  <img src="https://miro.medium.com/max/1050/1*HpLqMW2nShvkHuO28XDOZw.png" alt="cover image">
+## Quick Start
+1. Clone or download this repository.
+2. Serve the project directory with any static web server, for example `python -m http.server` from the project root.
+3. Open the served URL in a modern desktop browser (Chrome, Edge, or Firefox).
 
-**A Fusion of OCR Technology (Tesseract.js) & Web Speech API 🗣💬.  Non-mobile responsive 📱🚫.**
+## Using the App
+- Use the image uploader for PNG or JPG assets; use the PDF uploader for multi-page documents.
+- Confirm each recognition result, edit the transcript inline, and save snapshots as needed.
+- Select a voice, pitch, and rate, then generate narration for the full transcript or selected passages.
+- Export audio-ready text or the recognized transcript to plain `.txt` files via the download button.
 
-<div align="left">
+## Project Layout
+- `index.html` hosts the interface shell and orchestrates the main workflow.
+- `js/main.js` coordinates OCR, PDF rendering, and speech synthesis controls.
+- `js/articulate.js` focuses on speech synthesis helpers and voice selection logic.
+- `css/` contains layout and component styling, including Bootstrap overrides.
+- `inputs/` and `outputs/` provide sample documents and generated transcripts for quick testing.
 
-### 📌 Features
+## Technology Stack
+- Tesseract.js WebAssembly build for client-side OCR.
+- Mozilla PDF.js for rendering PDF pages into canvas elements.
+- Web Speech API for voice playback and narration controls.
+- Vanilla JavaScript enhanced with Bootstrap 4 utilities for layout.
 
-</div>
-<div align="left">
+## Development Notes
+- Web Speech API voice availability varies by browser and operating system; confirm support before demos.
+- Large PDFs process page by page; keep the browser tab focused for faster OCR throughput.
+- To customize styling, extend the utility classes in `css/main.css` instead of editing Bootstrap directly.
 
-<ul>
-	<li>Image-to-Text: Input image file for Text Extraction with <a href='https://github.com/tesseract-ocr/tesseract' target='_blank'>Tesseract-OCR</a></li>
-	<li>PDF-to-Image-to-Text: Input PDF File to render each page image for Text Extraction with <a href='https://mozilla.github.io/pdf.js' target='_blank'>PDF.js</a></li>
-	<li>Text-to-Speech: Voice generation with Web API <a href='https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis' target='_blank'>SpeechSynthesis</a></li>
-	<li>Export extracted text to local .txt file.</li>
-</ul>
-
-</div>
-</div>
-
-### 🌟 Try it yourself
-[**Live Demo :: Link**](https://incubated-geek-cc.github.io/Text-To-Speech-App)
-
-### ✍ Read related post here
-[**Article One :: Build A Text-To-Speech App Using Client-Side JavaScript**](https://geek-cc.medium.com/build-a-text-to-speech-app-using-client-side-javascript-98cd72df73bb)
-<br>
-[**Article Two :: Build An Image & PDF Text Extraction Tool with Tesseract OCR Using Client-side JavaScript**](https://geek-cc.medium.com/build-an-image-pdf-text-extraction-tool-with-tesseract-ocr-using-client-side-javascript-6126031001)
-
-### 👀 Preview
-
-#### Part i.
-<img src='https://miro.medium.com/max/900/1*yv3K9jUTBEoO115r7yXSOQ.gif' width="800px" />
-
-<img src='https://miro.medium.com/max/1050/1*ZfYL_Ff-4bp5Vgsdojc2Cg.png' width="800px" />
-
-#### Part ii.
-<img src='https://miro.medium.com/max/900/1*qO3olCr6LsSdOydbHS1fTA.gif' width="800px" />
-
-<p>— <b>Join me on 📝 <b>Medium</b> at <a href='https://medium.com/@geek-cc' target='_blank'>~ ξ(🎀˶❛◡❛) @geek-cc</a></b></p>
-
----
-
-#### 🌮 Please buy me a <a href='https://www.buymeacoffee.com/geekcc' target='_blank'>Taco</a>! 😋
-
----
-
-## 📜 License & Credits
-
-<ol>
-	<li>© Copyright - This work is licensed under <a rel="license" href="https://raw.githubusercontent.com/incubated-geek-cc/Text-To-Speech-App/main/LICENSE-2.0.txt">Apache License</a>
-	</li>
-	<li>Original library at <a href='https://tesseract.projectnaptha.com/' target='_blank'>Tesseract.js v2</a> and its co-creator/maintainer <a href="https://github.com/jeromewu" target="_blank">Jerome Wu</a></li>
-</ol>
+## License
+This project is distributed under the Apache License 2.0. See `LICENSE-2.0.txt` for full details.
